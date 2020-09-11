@@ -1,6 +1,6 @@
 # openSCI
 
-openSCI is a Python Continuos Integrator with bash script to deal with [react]("https://reactjs.org/") and [angular]("https://angular.io/") deploys to github
+openSCI is a Python Continuous Integrator with bash script to deal with [react]("https://reactjs.org/") and [angular]("https://angular.io/") deploys to github
 
 ## Installation
 
