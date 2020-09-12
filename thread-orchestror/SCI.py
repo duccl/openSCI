@@ -7,9 +7,10 @@ class SCI:
         args =self.parser.parse_args()
         self.projects_paths = args.projectsRoots
         self.projects_labels = args.projectsLabels
+        self.frameworks = args.frameworks
 
     def deployAll(self):
         for project_id,project_path in enumerate(self.projects_paths):
-            project_deployer = Deployer(project_path,self.projects_labels[project_id])
+            project_deployer = Deployer(project_path,self.projects_labels[project_id],self.frameworks[project_id])
             project_threadHandler = threadHandler(project_id,self.projects_labels[project_id],project_deployer)
             project_threadHandler.start()
