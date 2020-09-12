@@ -13,7 +13,7 @@ git clone https://github.com/duccl/openSCI
 ## Usage
 
 ```bash
-python3 openSCI --projectsRoots "/react/mytodo" "/angular/mytodoang" --projectsLabels "react-proj" "angular-proj"
+python3 openSCI --projectsRoots "/react/mytodo" "/angular/mytodoang" --projectsLabels "react-proj" "angular-proj" --frameworks "react" "angular"
 ```
 
 ## Contributing
