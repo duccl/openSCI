@@ -2,6 +2,10 @@
 
 openSCI is a Python Continuous Integrator with bash script to deal with [react]("https://reactjs.org/") and [angular]("https://angular.io/") deploys to github
 
+## Languages
+- [Python]("https://www.python.org/")
+- Bash
+
 ## Installation
 
 Use git to clone this repo
@@ -17,7 +21,7 @@ python3 openSCI --projectsRoots "/react/mytodo" "/angular/mytodoang" --projectsL
 ```
 
 ## Contributing
-Create another branch, have fun and when you need just do a pull request.
+Create another branch, have fun and when you wish just do a pull request.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
