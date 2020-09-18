@@ -1,3 +1,4 @@
+#!/bin/bash
 PROJECT_PATH=$1
 echo 'Deploying a React project'
 

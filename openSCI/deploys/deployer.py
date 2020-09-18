@@ -13,7 +13,6 @@ class Deployer:
 
     def deploy(self):
         self.logger.log_to_console(f"{self.projectLabel} deploy requested")
-        
         return_values = subprocess.check_call(f"{self.main_bash_deploy_script} {self.framework} -p={self.projectFolderToBeDeployed}",
                                               shell=True)
         self.logger.log_to_console(f"{self.projectLabel} deploy finished with {return_values} code")

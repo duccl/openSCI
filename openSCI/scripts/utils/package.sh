@@ -1,3 +1,4 @@
+#!/bin/bash
 PROJECT_PATH=$1
 FILE="$PROJECT_PATH/package.json"
 

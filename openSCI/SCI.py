@@ -11,6 +11,10 @@ class SCI:
 
     def deployAll(self):
         for project_id,project_path in enumerate(self.projects_paths):
-            project_deployer = Deployer(project_path,self.projects_labels[project_id],self.frameworks[project_id])
-            project_threadHandler = threadHandler(project_id,self.projects_labels[project_id],project_deployer)
+            project_deployer = Deployer(project_path,
+                                        self.projects_labels[project_id],
+                                        self.frameworks[project_id])
+            project_threadHandler = threadHandler(project_id,
+                                                  self.projects_labels[project_id],
+                                                  project_deployer)
             project_threadHandler.start()
