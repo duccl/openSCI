@@ -20,7 +20,7 @@ PROJECT_PATH=0
 for arg in "$@"
 do
     case $arg in
-        -p=*|-path=*)
+        -p=*|--path=*)
             PROJECT_PATH="${arg#*=}"
         ;;
     esac
@@ -33,15 +33,15 @@ then
 fi
 
 echo
-echo "$PROJECT_PATH"
+# echo "$PROJECT_PATH"
 echo
 
-HAS_PACKAGE=$(sh utils/package.sh)
+# HAS_PACKAGE=$(sh utils/package.sh)
 
-if [[ $HAS_PACKAGE == 0 ]];
-then
-    exit 1
-fi
+# if [[ $HAS_PACKAGE == 0 ]];
+# then
+#     exit 1
+# fi
 
 case $1 in
     angular) sh angular/main.sh $PROJECT_PATH;;
